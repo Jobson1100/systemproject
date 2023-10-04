@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HOME</title>
+	<link rel="stylesheet" href="flexible.css" />
+	<link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+</head>
+
+<body>
+	<div class='row'>
+		<div class='header'>
+			<img id="log" src=".png"><h1>Engineering Project Management System</h1>
+		</div>
+	</div>
+
+	<div class='row'>
+
+		<div class='col-12'>
+			<div id='nav'>
+			<ul>
+					<li class="active"><a href="home_admin.php" ><i class='bx bxs-home'></i>HOME</a></li>
+					<li><a href=designs.php><i class='bx bxs-info-circle'></i>GET STARTED</a></li>
+					<li><a href="feature.php"><i class='bx bxs-cog'></i>FEATURES</a></li>
+					<li><a href="review.php"><i class='bx bx-comment-detail'></i>REVIEW</a></li>	
+					<li><a href="contact.php"><i class='bx bx-message'></i></i>CONTACT</a></li>
+					<li><a href="booking.php"><i class='bx bx-objects-vertical-bottom'></i>BOOK</a></li>
+					<li><a href="logout-user.php"><i class='bx bxs-tree'></i>LOG OUT</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class='row'>
+		<div class='col-4'>
+			<div id='left'>
+				<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..">
+				<div id="btn">
+					<button>Search</button>
+				</div>
+				<br>
+				<h2>What is Project Engineering?</h2>
+
+				<h3>Project engineering refers to the process of managing an engineering project from start through to completion.
+					<br>
+					<br>
+					On a day to day basis, project engineering consists of tasks relating to: Performing calculations, Drawing up specifications,reviewing proposals etc.
+				  <br>
+				  <br>
+				  While smaller projects are usually run under a single project engineer, larger projects may require a project manager <br>
+				   or management team.
+				</h3>
+				<button id="more"><a href='about.php'>Read More</a></button>
+			</div>
+		</div>
+
+		<div class='col-8'>
+			<div class="w3-content">
+
+				<img class="mySlides w3-animate-fading" src="camp1.jpg">
+				<img class="mySlides w3-animate-fading" src="camp2.jpg">
+				<img class="mySlides w3-animate-fading" src="camp3.jpg">
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<div class="row">
+
+	</div>
+
+	<div class='row'>
+		<div id='footer'>
+
+			<div id="footerNav">
+			<li class="active"><a href="home.php" >HOME</a></li>
+					<li><a href=designs.php>DESIGNS</a></li>
+					<li><a href="feature.php">FEATURES</a></li>
+					<li><a href="user_reviews.php">REVIEW</a></li>	
+					<li><a href="contact.php">CONTACT</a></li>
+					<li><a href="about.php">ABOUT </a></li>
+					<li><a href="logout-user.php">LOG OUT</a></li>
+			</div>
+
+
+			<a href=""><i class='bx bxl-facebook-circle'></i></a>
+			<a href=""><i class='bx bxl-twitter'></i></a>
+			<a href=""><i class='bx bxl-whatsapp'></i></a>
+			<a href=""><i class='bx bxl-instagram'></i></a>
+			<a href=""><i class='bx bxl-tiktok'></i></a>
+			
+			<h3>Engineering Project Management System &copy;copyrightsreserved </h3>
+
+		</div>
+
+	</div>
+	</div>
+
+	    </div>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) { myIndex = 1 }
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 6000);
+		}
+	</script>
+
+</body>
+
+</html>
