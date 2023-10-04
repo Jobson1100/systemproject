@@ -1,0 +1,960 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+
+}
+
+/* for mobile */
+[class*="col-"] {
+    width: 100%;
+}
+
+.row .header img{
+    height: 50px;
+    width: 60px;
+    float: left;
+    margin-top: 15px;
+}
+.row .header h1{
+margin-left: 25%;
+}
+
+.row .header {
+display: flex;
+}
+
+
+@media only screen and (max-width:1111px) {
+
+    .row .col-4 #sites{
+        background-color: whitesmoke;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        padding: 1rem;
+        color: black;
+        display: grid;
+        font-size: 65%;
+    }
+
+    .row .col-4 #sites ul{
+        font-size: 19px;
+    }
+
+
+}
+
+@media only screen and (max-width:1221px) {
+    .row .header {
+        text-align: center;
+        background-color: rgb(43, 43, 63);
+        padding: 2%;
+        color: white;
+        font-size: 77%;
+    }
+
+    .row .header h1{
+        margin-left: 17%;
+        }
+
+        .row .header h1{
+            margin-left: 25%;
+            }
+
+    .row .col-12 {
+        background-color: rgb(0, 0, 0);
+        padding: 0.5%;
+        text-align: center;
+        padding-bottom: 0.5%;
+    }
+
+    .row .col-12 #nav ul {
+        list-style-type: none;
+        width: 100%;
+        margin: 0 5rem 0;
+    }
+
+    .row .col-12 #nav li {
+        width: 100%;
+        border-bottom: black 1px;
+        margin-right: 50px;
+
+    }
+
+    .row .col-12 #nav li a:hover {
+        background-color: #555;
+        color: white;
+        width: 100%;
+    }
+
+    .row .col-12 #nav li {
+        float: left;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .row .col-8 .maps {
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+@media only screen and (max-width:1127px) {
+    .row .col-4 #left h3{
+        font-size: 17px;
+    }
+
+    .row .col-4 #left h2{
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width:943px) {
+    .row .col-4 #left h3{
+        font-size: 15px;
+    }
+
+    .row .col-4 #left h2{
+        font-size: 17px;
+    }
+}
+
+
+
+@media only screen and (max-width:687px) {
+    .row .header h1{
+        margin-left: 15%;
+        font-size: 20px;
+        }
+}
+
+@media only screen and (max-width:600px) {
+    .row .header h1{
+        margin-left: 15%;
+        font-size: 18px;
+        }
+}
+
+@media only screen and (max-width:415px) {
+    .row .header h1{
+        margin-right: 12%;
+        font-size: 15px;
+        }
+}
+
+@media only screen and (max-width:911px) {
+    .row .header {
+        text-align: center;
+        background-color: rgb(43, 43, 63);
+        padding: 2%;
+        color: white;
+        font-size: 77%;
+    }
+
+    .row .header h1{
+        margin-left: 15%;
+        }
+
+    .row .col-12 {
+        background-color: rgb(0, 0, 0);
+        padding: 0.5%;
+        text-align: center;
+        padding-bottom: 0.5%;
+    }
+
+    .row .col-12 #nav ul {
+        list-style-type: none;
+        width: 100%;
+        margin: 0 5rem 0;
+    }
+
+    .row .col-12 #nav li {
+        width: 100%;
+        border-bottom: black 1px;
+        margin-right: 50px;
+
+    }
+
+    .row .col-12 #nav li a:hover {
+        background-color: #555;
+        color: white;
+        width: 100%;
+    }
+
+    .row .col-12 #nav li {
+        float: left;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media only screen and (min-width:800px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+}
+
+.col-2 {
+    color: white;
+    background-color: white;
+    height: 510px;
+
+}
+
+
+.row .col-8 .w3-content img {
+    width: 75%;
+    height: 1%;
+    margin: auto;
+}
+
+.row .col-12 #nav .active{
+    background-color: black;
+}
+
+.row .col-4 ul #RevText {
+    background-color: aqua;
+}
+
+.col-4 #review {
+    width: 100px;
+    height: 80px;
+}
+
+.row .col-8 {
+    color: white;
+    height: 510px;
+    background-color: rgb(185, 176, 176);
+}
+
+.row .col-4 {
+    background-color: white;
+    color: black;
+    height: 510px;
+    border-radius: 5px;
+}
+
+.row .col-4 ul {
+    font-size: 29px;
+
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background: darkcyan;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+
+
+.row .col-4 #left #btn {
+    padding-top: 0.5%;
+}
+
+.row .col-4 #left #btn button {
+    border: none;
+    padding: 6px;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-top: 0.9rem;
+    transition: all 380ms ease;
+
+}
+
+.row .col-4 #left #btn button:hover {
+    background: blue;
+    color: whitesmoke;
+}
+
+.row .header {
+    text-align: center;
+    background-color: rgb(43, 43, 63);
+    padding: 0.7%;
+    color: white;
+    border-radius: 17px;
+}
+
+.row .col-4 .slide .profile{
+    background-color: Grey;
+    color: black;
+    border-radius: 20px;
+    padding: 0.8rem;
+}
+
+.row .revtitle {
+    color: black;
+    background-color: aquamarine;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.row .revtitle h2{
+    text-align: center;
+}
+
+.row h3{
+    float: left;
+    display: flex;
+}
+
+.row #ft{
+    float: right;
+    margin-right: 10px;
+}
+
+
+
+.row .col-4 #left input[type="text"] {
+    width: 70%;
+    font-size: 14px;
+    margin: 1rem;
+    margin-right: 2px;
+    padding: 5px;
+    float: left;
+    border-radius: 5px;
+    transition: width 380ms ease-in-out;
+}
+
+.row .col-4 input[type="text"]:focus {
+    width: 70%;
+}
+
+.row .col-12 {
+    background-color: #01bcd5;
+    padding: 0.5%;
+    text-align: center;
+    padding-bottom: 0.5%;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+.row .col-12 h3 {
+    color: white;
+
+}
+
+.row .col-12 #nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.row .col-12 #nav li a {
+    display: block;
+    color: whitesmoke;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: all 380ms ease;
+}
+
+.row .col-12 #nav li {
+    float: left;
+    border-right: 1px solid black;
+    
+}
+
+.row .col-12 #nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.row .col-4 #left {
+    background-color: white;
+    height: 510px;
+
+}
+
+.row .col-4 #middle {
+    background-color: white;
+    height: 510px;
+
+}
+
+
+
+.row .col-4 #right {
+    background-color: white;
+    height: 510px;
+}
+
+.row #footer {
+    background-color: rgb(67, 67, 121);
+    border-radius: 13px;
+    height: 265px;
+    border: 4px solid black;
+    margin-top: 1rem;
+}
+
+.row #footer h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.row #footer i {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+
+}
+
+.row #signin {
+    background: rgb(179, 171, 171);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem rgba(43, 42, 42, 0.493);
+    width: 35%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+
+.row .col-8 #map1 {
+    background-color: white;
+    width: 92%;
+    height: 300px;
+    margin: 0.5rem;
+
+}
+
+.row .col-8 #map1 iframe {
+    width: 100%;
+    height: 100%;
+    margin: .1rem;
+    border: 0;
+    overflow: hidden;
+
+}
+
+
+.row .col-8 .maps {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    border-radius: 15px;
+}
+
+.row .col-12 #map1 {
+    background-color: white;
+    width: 92%;
+    height: 300px;
+    margin: 0.5rem;
+
+}
+
+.row .col-12 #map1 iframe {
+    width: 100%;
+    height: 100%;
+    margin: .1rem;
+    border: 0;
+    overflow: hidden;
+
+}
+
+
+.row .col-12 .maps {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    border-radius: 15px;
+
+}
+
+.row .col-12 #site{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 1rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.row .col-12 #site img{
+    height: 55%;
+    width: 30%;
+}
+
+.row .col-4 #sites{
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.5rem;
+    color: black;
+    display: grid;
+}
+
+.row .col-4 #sites img{
+    height: 75%;
+    width: 100%;
+}
+
+.row .col-4 #site button a{ 
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.row .col-4 #site button:hover{
+    background-color: green;
+    color: white;
+}
+
+.row .col-4 #features{
+    background-color: whitesmoke;
+    display: grid;
+    height: 150px;
+    border-radius: 15px;
+    color: black;
+    border: 5px solid blue;
+}
+.row .col-4 #features img{
+    height: 88px;
+    width: 120px;
+    padding: 0.5rem;
+}
+
+.row .col-4 #review-form #review{
+    width: 50%;
+}
+
+.row #footer #footerNav ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+}
+
+.row #footer #footerNav li {
+    width: 100%;
+    border-bottom: black 1px;
+    list-style-type: none;
+    width: 30%;
+    padding: 0.2rem;
+    background-color: grey;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin-left: 35%;
+}
+
+.row #footer #footerNav li a {
+   text-decoration: none;
+    color: black
+    
+}
+
+.row #footer #footerNav li a:hover {
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 8px;
+}
+
+.row #footer #footerNav li {
+    text-align: center;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.row #footer #footerNav .active {
+  background-color: royalblue;
+}
+
+.row #footer  h3 {
+ color: white;
+ font-size: 25px;
+ float: right;
+ padding: 0.5rem;
+}
+
+.row #footer #view{
+    padding: 0.3rem;
+    background-color: grey;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.row .col-12 #ptitle{
+margin-right: 30%;
+}
+.row .col-12 h3{
+    margin-right: 20%;
+}
+
+.row .col-4 #left button{
+text-decoration: none;
+color: green;
+}
+
+.row .col-4 #task_description{
+    height: 85px;
+    width: 80%;
+    border-radius: 6px;
+    border: black solid;
+    font-size: 18px;
+}
+
+.row .col-8 table{
+    width: 80%;
+    color: black;
+}
+
+.row .col-8 table, tr, th{
+    border: black solid;
+    
+}
+.row .col-8 table, tr, td{
+    border: black solid;
+    
+}
+
+.row .col-4 label{
+    font-weight: bold;
+}
+
+.report-form .col-8 #project-name{
+    width: 40%;
+}
+
+.report-form .col-8 #name{
+    width: 40%;
+}
+
+.report-form .col-8 #report-text{
+    width: 80%;
+    border: black solid;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.report-form .col-8{
+    width: 100%;
+    height: 750px;
+    color: black;
+
+}
+
+.row .col-8 .reports{
+    border: black solid;
+    border-radius: 5px;
+    color: black;
+    height: 500px;
+    display: grid;
+    }
+
+.row .col-8 .reports .report-area{
+background-color: white;
+text-align: left;
+height: 450px;
+margin-top: 2%;
+word-break: break-word;
+overflow-y: auto;
+}
+
+
+.row .col-8 .reports .project-name {
+    text-align: left;
+    height: 10px;
+    font-weight: bold;
+}
+
+.row .col-8 .reports .name {
+    text-align: left;
+    font-weight: bold;
+}
+
+.row .col-8 .menu input{
+    width: 10%;
+}
+
+.row .col-8 .menu{
+    color: black;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.loading-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.row .col-4 #sites ul{
+    float: left;
+}
+
+.row .col-4 #sites button{
+    padding: 0.5rem;
+    width: 50%;
+    margin: auto;
+    background-color: darkcyan;
+    color: white;
+}
+
+.row .col-8 .reports button{
+padding: 7px;
+font-weight: bold;
+text-decoration: none;
+background-color: darkcyan;
+}
+
+.row .col-8 .reports button a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+.row .col-8 .reports button:hover {
+    background-color: rgb(224, 24, 24); /* Change the background color on hover */
+}
+
+.row .col-12 .buttons #accept{
+    padding: 10px;
+    background-color: green;
+    margin-top: 10px;
+}
+.row .col-12 .buttons #reject{
+    padding: 10px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.row .col-12 .buttons #accept:hover{
+background-color: #2b678f;
+}
+
+.row .col-12 .buttons #reject:hover{
+    background-color: rgb(212, 26, 26);
+}
+
+.row .col-8 .buttons{
+    margin-right: 20%;
+    margin-top: 10px;
+}
+
+.row .col-4 form{
+    display: grid;
+}
+
+.row .col-4 #review{
+    width: 100%;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    margin-bottom: 10px;
+}
+
+.row .col-4 #assign form{
+display: block;
+}
+
+.row .col-12 #budgets table{
+background-color: white;
+margin: auto;
+width: 50%;
+height: 450px;
+}
+
+.row section button{
+    padding: 5px;
+    background-color: #2b678f;
+    color: white;
+    border-radius: 5px;
+}
+
+.row section button a{
+    color: white;
+}
+
+.row .book_form{
+    margin-top: 25px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: gainsboro;
+    width: 50%;
+    display: grid;
+}
+
+.row .book_form form{
+    display: grid;
+}
+
+.row .col-4 #assign #view_progress{
+background-color: #01bcd5;
+padding: 10px;
+border-radius: 5px;
+margin-top: 8px;
+} 
+
+.row .col-4 #assign #view_progress a{
+   color: black;
+   text-decoration: none;
+} 
+
+.row .col-4 #btn-progress{
+    background-color: burlywood;
+    padding: 7px;
+    border-radius: 7px;
+    width: 80%;
+}
+
+.row .col-4 #btn-progress-back{
+    background-color: #3498db;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 7px;
+    width: 20%;
+}
+
+.row .col-4 #btn-progress:hover{
+    background-color: darkgrey;
+}
+
+.row .col-4 #btn-progress-back:hover{
+    background-color: darkgrey;
+}
+
+.row .col-4 #assign #btn-task{
+    background-color: #3498db;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 7px;
+    width: 20%;
+}
+
+.row .col-4 #assign #btn-to-progress{
+    background-color: #3498db;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 7px;
+}
+
+.row .col-4 #assign #btn-to-progress a{
+text-decoration: none;
+color: black;
+}
+
+.row .col-4 #assign #btn-task:hover{
+    background-color: darkkhaki;
+}
+
+.row .col-4 #assign #btn-to-progress:hover{
+    background-color: darkgray;
+}
